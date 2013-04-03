@@ -3,6 +3,7 @@
     "description": "This library allows you to quickly and easily send emails through SendGrid using PHP.",
     "homepage": "http://sendgrid.com",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "files": ["SendGrid_loader.php"]
     }
