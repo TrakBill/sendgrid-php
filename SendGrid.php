@@ -33,7 +33,11 @@ class SendGrid
     {
       throw new Exception("Api '$class_name' not found.");
     }
-    require_once $file;
+    
+    if (!class_exists($api))
+    {
+      require_once $file;
+    }
 
     $this->$name = new $api($this->username, $this->password);
     return $this->$name;
